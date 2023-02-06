@@ -2,7 +2,7 @@ package hello.servlet.web.frontcontroller.v1;
 
 import hello.servlet.web.frontcontroller.v1.controller.MemberFormControllerV1;
 import hello.servlet.web.frontcontroller.v1.controller.MemberListControllerV1;
-import hello.servlet.web.frontcontroller.v1.controller.MemberSaveControllrtV1;
+import hello.servlet.web.frontcontroller.v1.controller.MemberSaveControllerV1;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,7 +22,7 @@ public class FrontControllerServletV1 extends HttpServlet {
     public FrontControllerServletV1() {
         //서블릿이 생성될 때 매핑 정보 미리 담아두기 위해 생성자 활용
         controllerMap.put("/front-controller/v1/members/new-form", new MemberFormControllerV1());
-        controllerMap.put("/front-controller/v1/members/save", new MemberSaveControllrtV1());
+        controllerMap.put("/front-controller/v1/members/save", new MemberSaveControllerV1());
         controllerMap.put("/front-controller/v1/members", new MemberListControllerV1());
     }
 
